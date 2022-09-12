@@ -20,6 +20,10 @@ function build() {
     home.className = 'btn btn-light ms-3 fa fa-home';
     navbar.appendChild(home);
 
+    const twitter = document.createElement('button');  // Här skapar jag en twitterknapp i navigationbar.
+    twitter.className = 'btn btn-light ms-3 me-3 fa fa-twitter';
+    navbar.appendChild(twitter);
+
     const github = document.createElement('button');  // Här skapar jag en githubknapp i navigationbar.
     github.className = 'btn btn-light ms-3 me-3 fa fa-github';
     navbar.appendChild(github);
