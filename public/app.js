@@ -15,7 +15,6 @@ function build() {
     right.className = 'float-end w-50';
     app.appendChild(right);
     
-
     const home = document.createElement('button');  // Här skapar jag en hemknapp i navigationbar.
     home.className = 'btn btn-light ms-3 fa fa-home';
     navbar.appendChild(home);
@@ -42,10 +41,9 @@ function build() {
     left.appendChild(aboutDiv);
 
     const aboutText = document.createElement('p');
-    aboutText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare urna blandit, fermentum ex non, efficitur arcu.' + 
-    ' Aliquam dui purus, ultricies ut efficitur at, volutpat ut felis. Nam interdum magna et arcu tincidunt maximus at sed arcu.' +
-    ' Cras ac ligula quam. Quisque condimentum velit sed faucibus aliquam. Ut egestas vulputate malesuada. Nulla aliquam pharetra consequat.' +
-    ' In viverra, sapien ut eleifend laoreet, quam lectus consectetur odio, sed interdum purus lectus et massa.';
+    aboutText.innerHTML = 'Hi, my name is William Petterson and I am 19 years old. I recently graduated from Östra gymnasiet in Skogås, Huddinge, Stockholm, Sweden.'+
+    ' I am currently studying a fourth year on the same school. Right now I am living with my family which consist of four members. My dad, my mom, my little sister and me.'+
+    ' I hope to become a great developer after this year and I might continue to study afterward.';
     aboutText.className = 'bg-secondary p-2';
     aboutDiv.appendChild(aboutText);
 
@@ -54,7 +52,8 @@ function build() {
     aboutDiv.appendChild(container);
 
     const text2 = document.createElement('p');
-    text2.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare urna blandit, fermentum ex non, efficitur arcu.';
+    text2.innerHTML = 'As a little kid I grew up to love Hammarby IF, it has been my favourite and only Swedish football my whole life. '+
+    'I even have a small shirt for kids that say Hammarby on the chest';
     text2.className = 'bg-secondary p-2 w-50 float-start border-end border-3 border-light';
     container.appendChild(text2);
 
