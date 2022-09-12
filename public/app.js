@@ -2,31 +2,31 @@ console.log('Hello from js!');
 
 build();
 
-function build(){
-    const left = document.createElement('div');
+function build() {
+    const navbar = document.createElement('div'); // Skapar en div för själva navbaren och header.
+    navbar.className = 'navbar d-flex bg-primary';
+    app.appendChild(navbar);
+    
+    const left = document.createElement('div'); // Här delar jag upp sidan i två olika divar för att kunna strukturera sidan.
+    left.className = 'float-start w-50';
     app.appendChild(left);
 
-    const right = document.createElement('div');
-    right.className = 'float-start';
+    const right = document.createElement('div'); // -"-
+    right.className = 'float-end w-50';
     app.appendChild(right);
-
-    const navbar = document.createElement('div');
-    navbar.className = 'navbar d-flex bg-primary';
-    left.appendChild(navbar);
     
 
-    const home = document.createElement('button');
-    home.innerHTML = 'HOME';
-    home.className = 'btn btn-light ms-2';
+    const home = document.createElement('button');  // Här skapar jag en hemknapp i navigationbar.
+    home.className = 'btn btn-light ms-3 fa fa-home';
     navbar.appendChild(home);
 
-    const titleLeft = document.createElement('h1');
+    const titleLeft = document.createElement('h1'); //Skapar en titel för den vänstra diven. 
     titleLeft.innerHTML = 'William Pettersson';
-    titleLeft.className = 'h1 mt-3 ms-3';
+    titleLeft.className = 'h1 mt-3 ms-5';
     left.appendChild(titleLeft);
 
-    const aboutDiv = document.createElement('div');
-    aboutDiv.className = 'w-50 mg-3 ms-3 bg-dark text-light border';
+    const aboutDiv = document.createElement('div'); // Här skapar jag en div för textelementet.
+    aboutDiv.className = 'w-75 vh- mt-1 mg-3 ms-5 bg-dark text-light border';
     left.appendChild(aboutDiv);
 
     const aboutText = document.createElement('p');
@@ -34,9 +34,9 @@ function build(){
     aboutText.className = '';
     aboutDiv.appendChild(aboutText);
 
-    const titleRight = document.createElement('h1');
+    const titleRight = document.createElement('h1'); // Titel för den högra delen av siten. 
     titleRight.innerHTML = 'Hobbies';
-    titleRight.className = 'h1';
+    titleRight.className = 'h1 mt-3';
     right.appendChild(titleRight);
 }
 
