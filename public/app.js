@@ -54,9 +54,9 @@ function build() {
     text2.className = 'bg-secondary p-2 w-50 float-start border-end border-3 border-light';
     container.appendChild(text2);
 
-    const text3 = document.createElement('p');
-    text3.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare urna blandit, fermentum ex non, efficitur arcu.';
-    text3.className = 'bg-secondary p-2 w-50 float-end border-start border-3 border-light';
+    const text3 = document.createElement('ul');
+    text3.innerHTML = 'Interests' + '<li>Skiing / Snowboarding</li> <li>Gaming</li> <li>Hammarby IF</li>';
+    text3.className = 'bg-secondary p-2 w-50 float-end border-start border-3 border-light ps-4';
     container.appendChild(text3);
 
     const titleRight = document.createElement('h1'); // Titel för den högra delen av siten. 
@@ -64,9 +64,25 @@ function build() {
     titleRight.className = 'h1 mt-3';
     right.appendChild(titleRight);
 
-    const img1 = document.createElement('img');
-    img1.innerHTML = 'bild.jpg';
-    right.appendChild(img1);
+    const hobbies = document.createElement('div');
+    hobbies.className = '';
+    right.appendChild(hobbies);
 
+    const img1 = document.createElement('img');
+    img1.setAttribute('src','hif.JPG');
+    img1.setAttribute('alt','Picture of Hammarby tifo');
+    img1.className = ' float-end w-50';
+    hobbies.appendChild(img1);
+
+    const img2 = document.createElement('img');
+    img2.setAttribute('src','skiing.PNG');
+    img2.setAttribute('alt','Picture of me skiing');
+    img2.className = 'float-start w-50';
+    hobbies.appendChild(img2);
+
+    const pictext = document.createElement('p');
+    pictext.className = 'w-50 p-2';
+    pictext.innerHTML = 'I love to ski and snowboard and have been doing it since I was about 4 years old.';
+    hobbies.appendChild(pictext);
 }
 
